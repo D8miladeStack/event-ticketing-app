@@ -1,23 +1,27 @@
 import { EventBookingSystem } from './booking.js';
 
-// Create an event with a maximum capacity of 3 seats
 const system = new EventBookingSystem("Digital Skillup Conference 2026", 3);
 
-console.log("=== Build 1: Core Domain Execution ===\n");
+console.log("=== Build 2: Cancellation & Waitlist Promotion Test ===\n");
 
-// 1. Test Valid Bookings
-console.log("1. Alice books 2 seats:");
-console.log(system.bookTicket("Alice", 2));
+// 1. Initial Bookings (Filling up the 3-seat capacity)
+const aliceBooking = system.bookTicket("Alice", 2);
+const bobBooking = system.bookTicket("Bob", 1);
+console.log("Alice booked 2 seats:", aliceBooking.referenceCode);
+console.log("Bob booked 1 seat:", bobBooking.referenceCode);
 
-console.log("\n2. Bob books 1 seat:");
-console.log(system.bookTicket("Bob", 1));
-
-// 3. Test Over-Capacity / Waitlist (Capacity is full, so Charlie should be waitlisted)
-console.log("\n3. Charlie tries to book 1 seat (should trigger waitlist):");
+// 2. Charlie gets waitlisted since capacity is 3/3
+console.log("\nCharlie tries to book 1 seat:");
 console.log(system.bookTicket("Charlie", 1));
 
-console.log("\n--- Active Bookings (Map) ---");
+// 3. Alice cancels her booking
+console.log(`\nAlice (${aliceBooking.referenceCode}) cancels her booking...`);
+const cancelResult = system.cancelTicket(aliceBooking.referenceCode);
+console.log(cancelResult);
+
+// 4. Check updated system state
+console.log("\n--- Active Bookings Map (After Cancellation & Promotion) ---");
 console.dir(system.bookings);
 
-console.log("\n--- Active Waitlist ---");
+console.log("\n--- Active Waitlist (Should now be empty) ---");
 console.dir(system.waitlist);
