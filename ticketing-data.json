@@ -1,0 +1,79 @@
+{
+  "eventName": "Digital Skillup Conference 2026",
+  "totalCapacity": 100,
+  "bookings": [
+    [
+      "REF-W6T2L7",
+      {
+        "userName": "vespa",
+        "seats": 4,
+        "createdAt": "2026-10-13T13:22:25.300Z"
+      }
+    ],
+    [
+      "REF-NHH9QA",
+      {
+        "userName": "conduct",
+        "seats": 6,
+        "createdAt": "2026-10-13T13:22:38.941Z"
+      }
+    ],
+    [
+      "REF-RON8XI",
+      {
+        "userName": "mistotate",
+        "seats": 9,
+        "createdAt": "2026-10-13T13:22:59.693Z"
+      }
+    ],
+    [
+      "REF-0VRKIG",
+      {
+        "userName": "camp",
+        "seats": 2,
+        "createdAt": "2026-10-13T13:23:50.604Z"
+      }
+    ],
+    [
+      "REF-2O46UX",
+      {
+        "userName": "lola",
+        "seats": 8,
+        "createdAt": "2026-10-13T13:24:03.914Z"
+      }
+    ],
+    [
+      "REF-XBX8IC",
+      {
+        "userName": "n",
+        "seats": 1,
+        "createdAt": "2026-10-13T14:04:53.488Z"
+      }
+    ],
+    [
+      "REF-GEH6U2",
+      {
+        "userName": "camp",
+        "seats": 12,
+        "createdAt": "2026-10-13T14:09:32.877Z"
+      }
+    ],
+    [
+      "REF-ZO8CJ5",
+      {
+        "userName": "me",
+        "seats": 1,
+        "createdAt": "2026-10-13T14:09:48.957Z"
+      }
+    ],
+    [
+      "REF-KXPQ5D",
+      {
+        "userName": "me",
+        "seats": 1,
+        "createdAt": "2026-10-13T14:10:06.680Z"
+      }
+    ]
+  ],
+  "waitlist": []
+}

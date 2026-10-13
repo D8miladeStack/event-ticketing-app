@@ -2,9 +2,9 @@ import readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process';
 import { EventBookingSystem } from './booking.js';
 
-// Initialize readline interface and event system (capacity of 3 seats)
+// Initialize readline interface and event system (capacity of 100 seats)
 const rl = readline.createInterface({ input, output });
-const system = new EventBookingSystem("Digital Skillup Conference 2026", 3);
+const system = new EventBookingSystem("Digital Skillup Conference 2026", 100);
 
 async function promptMenu() {
   console.log(`\n========================================`);
